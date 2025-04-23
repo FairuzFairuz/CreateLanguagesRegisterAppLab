@@ -1,10 +1,22 @@
 import React from "react";
+import UsersDetailsPage from "./components/UsersDetailsPage";
+import UsersPage from "./components/UsersPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import LanguagesPage from "./components/LanguagesPage";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
-      <h2>GA SEB</h2>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/users" element={<UsersPage />} />
+        <Route path="/users/:id" element={<UsersDetailsPage />} />
+        <Route path="/languages" element={<LanguagesPage />} />
+      </Routes>
+    </Router>
   );
 }
 
