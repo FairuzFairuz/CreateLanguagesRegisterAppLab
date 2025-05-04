@@ -82,9 +82,7 @@ const UserLanguages = ({ userId, userName }) => {
         throw new Error("Failed to add language");
       }
 
-      setLanguages((prev) =>
-        Array.isArray(prev) ? [...prev, newLanguage] : [newLanguage]
-      ); // ✅ Ensures iterable format
+      setLanguages((prev) => [...prev, newLanguage]);
       setNewLanguage("");
     } catch (err) {
       console.error("Error adding language:", err);
@@ -94,7 +92,6 @@ const UserLanguages = ({ userId, userName }) => {
   return (
     <div>
       <h2>Languages for {userName}</h2>{" "}
-      {/* ✅ Display user name instead of ID */}
       {error && <p style={{ color: "red" }}>{error}</p>}
       {!languages.length ? (
         <p>No languages listed</p>
@@ -110,7 +107,6 @@ const UserLanguages = ({ userId, userName }) => {
           ))}
         </ul>
       )}
-      {/* ✅ Move input field outside list */}
       <input
         type="text"
         placeholder="Add new language"

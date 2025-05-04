@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_Base = "http://localhost:5001"; // Base API URL
+const API_Base = "http://localhost:5001";
 
 const UsersPage = () => {
   const [users, setUsers] = useState([]);
@@ -10,10 +10,10 @@ const UsersPage = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch(`${API_Base}/lab/users`); // Updated endpoint
+        const response = await fetch(`${API_Base}/lab/users`);
         if (!response.ok) throw new Error("Failed to fetch users");
         const data = await response.json();
-        setUsers(data || []); // Ensure users array is properly set
+        setUsers(data || []);
       } catch (err) {
         console.error("Error fetching users:", err);
         setError("Could not load users. Try again.");

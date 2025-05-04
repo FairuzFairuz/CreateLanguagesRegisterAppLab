@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import { Link } from "react-router-dom"; 
 
-const API_Base = "http://localhost:5001"; // Base API URL
+const API_Base = "http://localhost:5001"; 
 
 const LanguagesPage = () => {
   const [languages, setLanguages] = useState([]);
@@ -46,7 +46,6 @@ const LanguagesPage = () => {
         </ul>
       )}
 
-      {/* Button to navigate to ManageLanguages component */}
       <div className="manage-languages">
         <Link to="/manage-languages">
           <button>Manage Languages</button>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_Base = "http://localhost:5001"; // Base API URL
+const API_Base = "http://localhost:5001"; 
 
 const ManageLanguages = () => {
   const [languages, setLanguages] = useState([]);
