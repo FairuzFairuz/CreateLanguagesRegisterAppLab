@@ -100,7 +100,7 @@ const ManageUsers = () => {
         prevUsers.map((user) =>
           user.id === id ? { ...user, ...updatedData } : user
         )
-      ); // Update UI with modified user data
+      );
       setEditUser(null);
     } catch (err) {
       console.error("Error updating user:", err);
