@@ -20,3 +20,95 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+}
+.nav-links {
+  display: flex;
+  gap: 15px;
+  color: black;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-button {
+  background-color: lightblue;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: yellow;
+}
+h2 {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: lightblue;
+  color: black;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+}
+
+li:hover {
+  background: lightblue;
+}
+
+.manage-languages {
+  margin-top: 20px;
+}
+
+button {
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: green;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}

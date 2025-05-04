@@ -1,21 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HomePage = () => {
+const Homepage = () => {
   return (
     <div className="container">
-      <h1>Users and Languages Management</h1>
+      <h1>Welcome to the Users & Language Portal</h1>
+
+      {/* Navigation Links */}
       <div className="nav-links">
         <Link to="/users" className="nav-button">
-          Manage Users
+          Users Page
         </Link>
         <br />
         <Link to="/languages" className="nav-button">
-          Manage Languages
+          Languages Page
         </Link>
       </div>
     </div>
   );
 };
 
-export default HomePage;
+export default Homepage;
