@@ -96,8 +96,8 @@ const ManageUsers = () => {
       if (!response.ok)
         throw new Error(responseData.message || "Failed to update user");
 
-      setUsers((prev) =>
-        prev.map((user) =>
+      setUsers((prevUsers) =>
+        prevUsers.map((user) =>
           user.id === id ? { ...user, ...updatedData } : user
         )
       ); // Update UI with modified user data

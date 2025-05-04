@@ -81,7 +81,6 @@ const UserLanguages = ({ userId, userName }) => {
       if (responseData.status !== "okay") {
         throw new Error("Failed to add language");
       }
-
       setLanguages((prev) => [...prev, newLanguage]);
       setNewLanguage("");
     } catch (err) {
